@@ -110,13 +110,15 @@
     display: flex;
 
   }
-  #contactUs .contactSid {
-    margin-end: 10px;
-  }
+
   #contactUs .form {
     position: unset !important;
     transform: unset !important;
     width: calc(100% - 70px) !important;
     margin-left: auto;
   }
+  #contactUs .form form {
+    width: 80%;
+  }
+
 }

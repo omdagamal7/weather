@@ -51,3 +51,7 @@ form input, textarea {
 form input:hover,textarea:hover {
   border-color: black;
 }
+
+#contactUs .form textarea {
+  height: 150px;
+}
