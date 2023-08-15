@@ -105,3 +105,18 @@
     width: 30% !important;
   }
 }
+@media (width <= 768px){
+  #contactUs {
+    display: flex;
+
+  }
+  #contactUs .contactSid {
+    margin-end: 10px;
+  }
+  #contactUs .form {
+    position: unset !important;
+    transform: unset !important;
+    width: calc(100% - 70px) !important;
+    margin-left: auto;
+  }
+}
