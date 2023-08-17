@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="CSS/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/media.css">
-  <title>Document</title>
+  <title>Weather</title>
 </head>
 <body>
   <div class=" container-fluid vh-100" id="home">
@@ -32,14 +32,14 @@
               <input type="search" id="conSearch" class="w-100  rounded-4 border-0 outline-none px-3 py-3 bg-main" placeholder="Find City Weather" >
                 <button class="btn btn-lg btn-light rounded-4  top-50 translate-middle-y position-absolute end-5p " id="find">Find</button>
               </div>
-              <div class="weather d-flex justify-content-between align-items-center px-5 mx-5">
-                <div class="temp">
-                  <h2 class="text-50 fw-bold" id="name">Alex</h2>
+              <div class="weather d-flex justify-content-between align-items-center  mx-5">
+                <div class="temp flex-grow-1">
+                  <h2 class="text-50 w-100 fw-bold" id="name"></h2>
                   <p class="text-secondary mb-5">change of rain 0%</p>
-                  <h2 class="text-60 fw-bold d-inline-block mb-0" id="temp">30</h2><span class="text-60 fw-bold">&#176;</span>
+                  <h2 class="text-60 fw-bold d-inline-block mb-0" id="temp"></h2><span class="text-60 fw-bold">&#176;</span>
                 </div>
-                <div class="w-75 text-end img">
-                  <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" id="img" class="w-25 " alt="">
+                <div class="w-25 text-end img">
+                  <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" id="img" class="w-75 " alt="">
                 </div>
             </div>
             </div>
@@ -48,58 +48,42 @@
                 <h6 class="text-secondary text-opacity-75 mb-3">TODAYS FORECAST</h6>
                 <div class="col-md 2 text-center">
                   <div class="px-2  d-flex flex-column justify-content-between align-items-center ">
-                    <p class="text-secondary mb-3">
+                    <p class="text-secondary mb-3 timeTemp">
                       6:00 AM
                     </p>
-                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-50 timeImg" alt="">
+                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-30 timeImg" alt="">
                     <p class="fs-4 fw-bold ">30</p>
                   </div>
                 </div>
                 <div class="col-md 2 text-center">
                   <div class="px-2 d-flex flex-column justify-content-between align-items-center">
-                    <p class="text-secondary mb-3 ">
+                    <p class="text-secondary mb-3 timeTemp">
                       6:00 AM
                     </p>
-                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-50 timeImg" alt="">
+                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-30 timeImg" alt="">
                     <p class="fs-4 fw-bold ">30</p>
                   </div>
                 </div>
                 <div class="col-md 2 text-center">
                   <div class="px-2 d-flex flex-column justify-content-between align-items-center">
-                    <p class="text-secondary mb-3 ">
+                    <p class="text-secondary mb-3 timeTemp">
                       6:00 AM
                     </p>
-                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-50 timeImg" alt="">
+                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-30 timeImg" alt="">
                     <p class="fs-4 fw-bold ">30</p>
                   </div>
                 </div>
                 <div class="col-md 2 text-center">
                   <div class="px-2 h-100 d-flex flex-column justify-content-between align-items-center">
-                    <p class="text-secondary mb-3 ">
+                    <p class="text-secondary mb-3 timeTemp">
                       6:00 AM
                     </p>
-                    <img src="./img/cartoon-clouds-isolated-blue-background-cumulus-fluffy-eddy-blue-sky-hand-drawn-sketch_890748-565.png" class="w-50 timeImg" alt="">
+                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-30 timeImg" alt="">
                     <p class="fs-4 fw-bold ">30</p>
                   </div>
                 </div>
-                <div class="col-md 2 text-center">
-                  <div class="px-2 h-100 d-flex flex-column justify-content-between align-items-center">
-                    <p class="text-secondary mb-3">
-                      6:00 AM
-                    </p>
-                    <img src="./img/cartoon-clouds-isolated-blue-background-cumulus-fluffy-eddy-blue-sky-hand-drawn-sketch_890748-565.png" class="w-50 timeImg" alt="">
-                    <p class="fs-4 fw-bold ">30</p>
-                  </div>
-                </div>
-                <div class="col-md 2 text-center">
-                  <div class="px-2 d-flex flex-column justify-content-between align-items-center">
-                    <p class="text-secondary mb-3 ">
-                      6:00 AM
-                    </p>
-                    <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-50 timeImg" alt="">
-                    <p class="fs-4 fw-bold ">30</p>
-                  </div>
-                </div>
+
+
               </div>
               <div>
                 <div class="row bg-main rounded-4 h-25 p-3 m-0">
@@ -138,48 +122,69 @@
               <img src="./img/11.jpeg" class="wh-50p rounded-circle  " alt="">
             </div>
           </div>
-          <div class="bg-main sideRight rounded-4 p-4 d-flex flex-column justify-content-between">
-            <div class="d-flex justify-content-between align-items-center p-4">
-              <div>SAT</div>
-              <div class="d-flex justify-content-between align-items-center"> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25 me-3 ms-auto" alt="">
-              <span class="fw-bold me-auto">Sunny</span></div>
-              <div><span class="fw-bold">37</span>/37</div>
+          <div class="bg-main text-center sideRight rounded-4 p-4 d-flex flex-column justify-content-between">
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <span class="fw-bold statu"></span>
+              <div> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25 statuImg" alt="">
+              </div>
+              <div class="d-flex">
+                <span class="fw-bold tempeture"></span>
+                <div class="maxTemp" ></div>
+              </div>
+            </div> 
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <span class="fw-bold statu"></span>
+              <div> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25 statuImg" alt="">
+              </div>
+              <div class="d-flex">
+                <span class="fw-bold tempeture"></span>
+                <div class="maxTemp" ></div>
+              </div>
             </div>
             <div class="d-flex justify-content-between align-items-center p-3">
-              <div>SUN</div>
-              <div class="d-flex justify-content-between align-items-center"> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25 me-3 ms-auto" alt="">
-              <span class="fw-bold me-auto">Sunny</span></div>
-              <div><span class="fw-bold">37</span>/37</div>
+              <span class="fw-bold statu"></span>
+              <div class=""> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25 statuImg" alt="">
+              </div>
+              <div class="d-flex">
+                <span class="fw-bold tempeture"></span>
+                <div class="maxTemp" ></div>
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center p-4">
-              <div>MON</div>
-              <div class="d-flex justify-content-between align-items-center text-center"> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25 me-3 ms-auto" alt="">
-              <span class="fw-bold me-auto">Sunny</span></div>
-              <div><span class="fw-bold">37</span>/37</div>
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <span class="fw-bold statu"></span>
+              <div> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25 statuImg" alt="">
+              </div>
+              <div class="d-flex">
+                <span class="fw-bold tempeture"></span>
+                <div class="maxTemp" ></div>
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center p-4">
-              <div>TUE</div>
-              <div class="d-flex justify-content-between align-items-center"> <img src="./img/cartoon-clouds-isolated-blue-background-cumulus-fluffy-eddy-blue-sky-hand-drawn-sketch_890748-565.png" class="w-25 me-3 ms-auto" alt="">
-              <span class="fw-bold me-auto">Cloudy</span></div>
-              <div><span class="fw-bold">37</span>/37</div>
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <span class="fw-bold statu"></span>
+              <div> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png"" class="w-25  statuImg" alt="">
+              </div>
+              <div class="d-flex">
+                <span class="fw-bold tempeture"></span>
+                <div class="maxTemp" ></div>
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center p-4">
-              <div>WED</div>
-              <div class="d-flex justify-content-between align-items-center"> <img src="./img/cartoon-clouds-isolated-blue-background-cumulus-fluffy-eddy-blue-sky-hand-drawn-sketch_890748-565.png" class="w-25 me-3 ms-auto" alt="">
-              <span class="fw-bold me-auto">Cloudy</span></div>
-              <div><span class="fw-bold">37</span>/37</div>
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <span class="fw-bold statu"></span>
+              <div> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png"" class="w-25  statuImg" alt="">
+              </div>
+              <div class="d-flex">
+                <span class="fw-bold tempeture"></span>
+                <div class="maxTemp" ></div>
+              </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center p-4">
-              <div>THU</div>
-              <div class="d-flex justify-content-between align-items-center"> <img src="./img/cartoon-clouds-isolated-blue-background-cumulus-fluffy-eddy-blue-sky-hand-drawn-sketch_890748-565.png" class="w-25 me-3 ms-auto" alt="">
-              <span class="fw-bold me-auto">Cloudy</span></div>
-              <div ><span class="fw-bold">37</span>/37</div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center p-4">
-              <div>FRI</div>
-              <div class="d-flex justify-content-between align-items-center"> <img src="./img/illustration-cool-single-icon-with-weather-cloud-heavy-autumn-rains-thunderstorm-lightning_450656-180.png" class="w-25 me-3 ms-auto" alt="">
-              <span class="fw-bold me-auto">rainy</span></div>
-              <div><span class="fw-bold">37</span>/37</div>
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <span class="fw-bold statu"></span>
+              <div> <img src="./img/vector-modern-flat-sun-sunshine-icon-yellow-gradient-sunhot-weather-icon_491392-71.png" class="w-25  statuImg" alt="">
+              </div>
+              <div class="d-flex">
+                <span class="fw-bold tempeture"></span>
+                <div class="maxTemp" ></div>
+              </div>
             </div>
           </div>
         </div>

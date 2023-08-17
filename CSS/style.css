@@ -55,3 +55,8 @@ form input:hover,textarea:hover {
 #contactUs .form textarea {
   height: 150px;
 }
+/* .sideRight > div > div,
+.sideRight > div > span {
+  width: calc(100% / 3) !important;
+  text-align: center !important;
+} */
