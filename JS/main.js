@@ -46,10 +46,7 @@ function display(searchKey){
       let {maxtemp_c} = posts.forecast.forecastday[i].day
       let {text} = posts.forecast.forecastday[i].day.condition
       let {moonrise,moonset,sunrise,sunset} = posts.forecast.forecastday[i].astro
-      let time = [sunrise,moonrise,sunset,moonset,]
-      for (let i = 0; i < time.length ; i++) {
-        timeTemp[i].innerHTML = time[i];
-      }
+      var time = [sunrise,moonrise,sunset,moonset,]
       if (text == "Patchy rain possible" || text == "Heavy rain" || text == "Moderate rain") {
         text = "Rainy"
       }
@@ -69,7 +66,9 @@ function display(searchKey){
       }
 
     }
-
+    for (let i = 0; i < timeTemp.length ; i++) {
+      timeTemp[i].innerHTML = time[i];
+    }
     Name.innerHTML = posts.location.name;
     temp.innerHTML = posts.current.temp_c
     if (posts.current.temp_c <= 20){
