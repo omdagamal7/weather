@@ -120,5 +120,7 @@
   #contactUs .form form {
     width: 80%;
   }
-
+  #contactUs .form form textarea {
+    height: 100px;
+  }
 }

@@ -28,6 +28,7 @@ req.send();
 req.addEventListener("readystatechange",()=> {
   if (req.status == 200 && req.readyState == 4){
     let posts = JSON.parse(req.response);
+    console.log(posts);
     posts.location.localtime = "2023-08-16 5:52";
     console.log(posts.location.localtime);
     Name.innerHTML = posts.location.name;
